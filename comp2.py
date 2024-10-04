@@ -53,8 +53,7 @@ def complemento(num1, num2):
 
 
 #PRUEBAS
-a = 20
-b = 5
+
 binarioPri, binarioSegun = complemento(a,b)
-print(f"el núermo {a} en binarios es :" + binarioPri)
-print(f"el núermo {b} en binarios es :" + binarioSegun)
+print(f"el com2 de {a}  es : " + binarioPri)
+print(f"el com2 de {b}  es : " + binarioSegun)

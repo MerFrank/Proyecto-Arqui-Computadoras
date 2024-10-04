@@ -17,9 +17,9 @@ def DecBin(numDeci):
 
 #PRUEBAS
 
-a = 20
+a = 7
 b = 5
 res1 = DecBin(a)
 res2 = DecBin(b)
-print("20 en binarios es: "+res1)
-print("5 en binarios es: "+res2)
+print(f"{a} en binarios es: "+res1)
+print(f"{b} en binarios es: "+res2)

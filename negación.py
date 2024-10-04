@@ -1,3 +1,4 @@
+from comp2 import *
 # IMPORTANTE AGREGAR UN PUNTO DE CONTRO EN CASO DE QUE SE METAN NUMETOS EN LUGAR DE CADENAS
 
 #Esta funcion regresa la posición de un elemento(predefinido) deseado en una cadena
@@ -33,14 +34,14 @@ def nega(numBi):
 
 #PRUEBAS#
 # a = "123405617809" 
-a = "001111" 
-b = "011011"
-c = "0010010"
+# a = "001111" 
+# b = "011011"
+# c = "0010010"
 
-res1 = nega(a) 
-res2 = nega(b) 
-res3 = nega(c)
+res1 = nega(binarioPri) 
+res2 = nega(binarioSegun) 
+# res3 = nega(c)
 
-print(res1)
-print(res2)
-print(res3)
+print(f"el negado de  {a} es: "+res1)
+print(f"el negado de  {b} es: "+res2)
+# print(res3)
