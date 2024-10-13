@@ -15,8 +15,7 @@ def complemento(num1, num2):
         listCom2 = []
         for i in range(diferencia +1): #+1 por el bit del signo
             listCom2.append("0")
-            numBi1 = list(numBi1)
-            numBi2 = list(numBi2)
+            
         numBi1 = list(numBi1)
         numBi2 = list(numBi2)
         #Agregamos el bit del signo al número más grande
@@ -54,6 +53,6 @@ def complemento(num1, num2):
 
 #PRUEBAS
 
-binarioPri, binarioSegun = complemento(a,b)
-print(f"el com2 de {a}  es : " + binarioPri)
-print(f"el com2 de {b}  es : " + binarioSegun)
+# binarioPri, binarioSegun = complemento(a,b)
+# print(f"el com2 de {a}  es : " + binarioPri)
+# print(f"el com2 de {b}  es : " + binarioSegun)

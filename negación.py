@@ -38,10 +38,10 @@ def nega(numBi):
 # b = "011011"
 # c = "0010010"
 
-res1 = nega(binarioPri) 
-res2 = nega(binarioSegun) 
-# res3 = nega(c)
+# res1 = nega(binarioPri) 
+# res2 = nega(binarioSegun) 
+# # res3 = nega(c)
 
-print(f"el negado de  {a} es: "+res1)
-print(f"el negado de  {b} es: "+res2)
+# print(f"el negado de  {a} es: "+res1)
+# print(f"el negado de  {b} es: "+res2)
 # print(res3)

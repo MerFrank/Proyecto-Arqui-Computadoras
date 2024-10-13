@@ -31,11 +31,11 @@ def sumaBinaria(numBi1, numBi2):
 
 
 
-a = "001111" 
-b = "011011"
-c = "010010"
+# a = "001111" 
+# b = "011011"
+# c = "010010"
 
-res = sumaBinaria(c,a)
-print(res)
+# res = sumaBinaria(c,a)
+# print(res)
 
 
