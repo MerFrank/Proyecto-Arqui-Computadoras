@@ -26,7 +26,7 @@ def sumaBinaria(numBi1, numBi2):
                 resLista.append("1")
 
     resultado = ''.join(resLista[::-1])
-    return resultado
+    return resultado #Regresa una cadena
 
 
 

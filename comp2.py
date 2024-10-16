@@ -3,9 +3,9 @@ from DeciToBin import *
 def complemento(num1, num2):
     #num1 sera siempre el numero más largo 
     
-    #Convertir número decimal en binario, este es una cadena
-    numBi1 = DecBin(num1)
-    numBi2 = DecBin(num2)
+    
+    numBi1 = num1
+    numBi2 = num2
     #Sacamos la distancia de los números binarios 
     disNum1 = len(numBi1)
     disNum2 = len(numBi2)
