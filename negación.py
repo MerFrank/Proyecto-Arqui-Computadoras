@@ -1,5 +1,3 @@
-from comp2 import *
-# IMPORTANTE AGREGAR UN PUNTO DE CONTRO EN CASO DE QUE SE METAN NUMETOS EN LUGAR DE CADENAS
 
 #Esta funcion regresa la posición de un elemento(predefinido) deseado en una cadena
 def PrimerUno(numBi): 
@@ -9,6 +7,8 @@ def PrimerUno(numBi):
             # primer_uno = True
             indice = int(bit) 
             return indice #REGRESA UN NUMERO
+    indice = 0
+    return indice #Este es en caso de que no tenga ningun 1 en la cadena
         
 #Busca en una cadena(convetida a lista) y cambiar los 1 por 0 y los 0 por 1. CUIDADO no modifica la cadena original.
 def invert(numBi,indice):
@@ -28,17 +28,18 @@ def nega(numBi):
         numBi = str(numBi)
     
     indice=PrimerUno(numBi)
+    # new_cadena= invert(numBi,indice) if indice != 0 else 
     new_cadena= invert(numBi,indice)  
     nega_numBi = new_cadena
     return nega_numBi
 
 #PRUEBAS#
-# a = "123405617809" 
+# a = "00000" 
 # a = "001111" 
 # b = "011011"
 # c = "0010010"
 
-# res1 = nega(binarioPri) 
+# res1 = nega(a) 
 # res2 = nega(binarioSegun) 
 # # res3 = nega(c)
 

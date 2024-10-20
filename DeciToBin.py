@@ -1,42 +1,50 @@
-
+from negación import *
 def DecBin(numDeci):
+    if not isinstance (numDeci,int) or isinstance(numDeci,bool):
+        return "Error: Variable no valida"
+    
     limite = 8
+    numNega = False
 
     if (numDeci < 0 ):
         numDeci = abs(numDeci)
+        numNega = True
     
     temBi = bin(numDeci)[2:]
     longitudBin = len(temBi)
-    if (longitudBin > (limite -1)):
-        return "El número supera el limite de los 8 bits"
+    if (longitudBin >= limite):
+        return f"El número supera el limite de los {limite} bits"
     else:
-        difencia = (limite -1 ) - longitudBin
+        difencia = limite - longitudBin
         listaAux = []
         for i in range(difencia):
             listaAux.append("0")
         cadeAux = "".join(listaAux)
         numBiario = cadeAux + temBi
+        if (numNega):
+            numBiario = nega(numBiario)
         return numBiario
-
 
 
 
 #PRUEBAS
 
-a = 3
-b = 4
-c = -4
-d = 7
-res1 = DecBin(a)
-res2 = DecBin(b)
-res3 = DecBin(c)
-res4 = DecBin(d)
+# a = 3
+# b = True
+# c = 12
+# d = 7
+# numPrueba1 = DecBin(a)
+# numPrueba2= DecBin(b)
+# logn1 = len(numPrueba1)
+# logn2 = len(numPrueba2)
+# print(f"{a} en binarios es: "+numPrueba1 + f" de longitud {logn1}")
+# print(f"{b} en binarios es: "+numPrueba2 + f" de longitud {logn2}")
+# res3 = DecBin(c)
+# res4 = DecBin(d)
 
-logn1 = len(res1)
-logn2 = len(res2)
-logn3 = len(res3)
-logn4 = len(res4)
-print(f"{a} en binarios es: "+res1 + f" de longitud {logn1}")
-print(f"{b} en binarios es: "+res2 + f" de longitud {logn2}")
-print(f"{c} en binarios es: "+res3 + f" de longitud {logn3}")
-print(f"{d} en binarios es: "+res4 + f" de longitud {logn4}")
+# logn3 = len(res3)
+# logn4 = len(res4)
+# print(f"{a} en binarios es: "+res1 + f" de longitud {logn1}")
+# print(f"{b} en binarios es: "+res2 + f" de longitud {logn2}")
+# print(f"{c} en binarios es: "+res3 + f" de longitud {logn3}")
+# print(f"{d} en binarios es: "+res4 + f" de longitud {logn4}")
