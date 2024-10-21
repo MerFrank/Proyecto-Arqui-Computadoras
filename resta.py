@@ -1,7 +1,10 @@
-def sumaBinaria(numBi1, numBi2):
+from negación import *
+
+def restaBinaria(numBi1, numBi2):
     
     num1 = numBi1   
     num2 = numBi2
+    num2 = nega(num2)
     #Proceso de suma
     resultado = ""
     resLista = list(resultado)
@@ -28,15 +31,3 @@ def sumaBinaria(numBi1, numBi2):
 
     resultado = ''.join(resLista[::-1])
     return resultado #Regresa una cadena
-
-
-
-
-# a = "001111" 
-# b = "011011"
-# c = "010010"
-
-# res = sumaBinaria(c,a)
-# print(res)
-
-
