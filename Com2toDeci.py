@@ -28,8 +28,8 @@ def com2Deci(cadenaC2):
 
 
 # 12
-# numPos = "00001100"
-# numNega= "11110100"
+# numPos = "00000000"
+# numNega= "11111111"
 #3
 # numPos = "00000011"
 # numNega= "11111101"

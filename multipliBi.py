@@ -12,6 +12,7 @@ def multiBi(numBi1, numBi2):
     regisM = numBi2
     bitQm1 = "0"
     contador = len(numBi1)
+    print("\n Multiplicación \n")
     print(f"El registro A sera {regisA}")
     print(f"El multiplicando es: {regisM}")
     print(f"El multiplicador es: {regisQ}")
@@ -34,7 +35,7 @@ def multiBi(numBi1, numBi2):
             regisQ = regisA[-1] + regisQ #Agrega al Inicio
             regisA = regisA[:-1]# Elimina el ultimo carácter
             regisA = "1" + regisA if regisA[0] == "1" else "0" + regisA #rellenar A
-            print(f"A{regisA}, Q{regisQ}, Q-1{bitQm1}")
+            print(f"A: {regisA}, Q: {regisQ}, Q-1: {bitQm1}")
             # regisA = "0" + regisA
         elif (comprobación == "10"): #caso resta y desplazar. Llamar al negado para opera
             #resta A <-- A - M (se necesita el negado de M)
@@ -48,7 +49,7 @@ def multiBi(numBi1, numBi2):
             regisQ = regisA[-1] + regisQ #Agrega al Inicio
             regisA = regisA[:-1]# Elimina el ultimo carácter
             regisA = "1" + regisA if regisA[0] == "1" else "0" + regisA #rellenar A
-            print(f"A{regisA}, Q{regisQ}, Q-1{bitQm1}")
+            print(f"A: {regisA}, Q: {regisQ}, Q-1: {bitQm1}")
         else:           #Caso directo a desplazar
             print("Desplazamiento aritmético: A, Q, Q-1")
             #dezplazar
@@ -57,7 +58,7 @@ def multiBi(numBi1, numBi2):
             regisQ = regisA[-1] + regisQ #Agrega al Inicio
             regisA = regisA[:-1]# Elimina el ultimo carácter
             regisA = "1" + regisA if regisA[0] == "1" else "0" + regisA #rellenar A
-            print(f"A{regisA}, Q{regisQ}, Q-1{bitQm1}")
+            print(f"A: {regisA}, Q: {regisQ}, Q-1: {bitQm1}")
         
         contador -= 1
         

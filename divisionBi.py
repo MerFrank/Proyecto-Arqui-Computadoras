@@ -1,5 +1,4 @@
 from sumaBin import *
-from resta import *
 from negación import*
 
 def divi(numBi1, numBi2):
@@ -14,32 +13,49 @@ def divi(numBi1, numBi2):
     else:
         regisA = ["1" for i in range(len(numBi1))]
     regisA = "".join(regisA)
+    print("\n División \n")
+    print(f"El dividdendo es: {regisM}")
+    print(f"El divisor es: {regisQ}")
+    print(f"El registro Q0 es:; {regisQ[0]}")
+    print(f"El registro A sera {regisA}")
+    print(f"El contador empieza en: {contador}")
     for i in range((len(numBi1))):
-        
+        print(f"Contador {contador}")
+        print(f"A: {regisA}, Q: {regisQ}, M: {regisM}")
+        print(f"El signo de M es {regisM[0]} y el signo de A es {regisA[0]}")
+        print("Desplazamiento de: A, Q")
         if (regisM[0] == regisA[0]):
             #Desplazamiento
             regisA = regisA[1:] #Fuera el pirmer elemento
             regisA = regisA + regisQ[0] #Pasamos el primer elemento de Q
             regisQ = regisQ[1:]
+            print(f"A: {regisA}, Q: {regisQ}")
             #Resta
-            resulSuma = restaBinaria(regisA,regisM)
+            print("resta A <-- A - M")
+            NegaRegisM = nega(regisM)
+            resulSuma = sumaBinaria(regisA,NegaRegisM)
             if regisA[0] == resulSuma[0] or all(c in '0' for c in resulSuma):
                 regisA = resulSuma
                 regisQ = regisQ + "1"
+                print(f"Q0 <--- 1")
             if regisA[0] != resulSuma[0] and not all(c in '0' for c in resulSuma):
                 regisQ = regisQ + "0"
+                print(f"Q0 <--- 0")
+            print(f"A: {regisA}, Q: {regisQ}")
         else:
             #Desplazamiento
             regisA = regisA[1:] #Fuera el pirmer elemento
             regisA = regisA + regisQ[0] #Pasamos el primer elemento de Q
             regisQ = regisQ[1:]
+            #Suma
+            print("suma A <-- A + M")
             resulSuma = sumaBinaria(regisA,regisM)
             if regisA[0] == resulSuma[0] or all(c in '0' for c in resulSuma):
                 regisA = resulSuma
                 regisQ = regisQ + "1"
-            
             if regisA[0] != resulSuma[0] and not all(c in '0' for c in resulSuma):
                 regisQ = regisQ + "0"
+            print(f"A: {regisA}, Q: {regisQ}")
         
         contador -= 1
     

@@ -44,27 +44,27 @@ def menu():
     if (opcion == 1):
         respuesta = sumaBinaria(PrimerBi,SegunBi)
         print(f"La repuesta es: {respuesta}")
-        aux= binDec(respuesta)
+        aux= com2Deci(respuesta)
         print(f"En decimal es: {aux}")
 
     if (opcion == 2):
         respuesta = restaBinaria(PrimerBi,SegunBi)
         print(f"La repuesta es: {respuesta}")
-        aux= binDec(respuesta)
+        aux= com2Deci(respuesta)
         print(f"En decimal es: {aux}")
 
     if (opcion == 3):
         respuesta = multiBi(PrimerBi,SegunBi)
         print(f"La repuesta es: {respuesta}")
-        aux= binDec(respuesta)
+        aux= com2Deci(respuesta)
         print(f"En decimal es: {aux}")
 
     if (opcion == 4):
         resto, cociente = divi(PrimerBi,SegunBi)
         print(f"El resto de : {resto} y el cociente es {cociente}")
-        cociDeci= binDec(cociente)
+        cociDeci= com2Deci(cociente)
         print(f"el cociente es : {cociDeci}")
-        resDeci= binDec(resto)
+        resDeci= com2Deci(resto)
         print(f"el resto es : {resDeci}")
 
 
